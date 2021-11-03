@@ -11,7 +11,7 @@
 <div class ="box">
 <!--tag form-->
     <form>    <!-- method="POST" action="candidatos.php">  para connectar ao servidor e enviar os dados para candidatos.php-->
-    <fieldset>  <!--Permite agrupar campos do formulário-->
+    <fieldset class="pRelativo">  <!--Permite agrupar campos do formulário-->
         <legend><strong>Formulário dos Candidatos</strong></legend> <!--legendaa do fieldset-->
 
         <div class="campo foco">
@@ -31,7 +31,7 @@
             <input type="email" name="email" id="email" required>
         </div>
 <!--radio -->
-        <div class="grupo">
+        <div class="grupo tabela">
             <label>Preferências de Programação</label>
             <!--value passa o valor da escolha para o servidor-->
             <label>
@@ -58,7 +58,7 @@
 
 <!--checkbox -->
         <div class="grupo">
-            <label>Tecnologias Utilizadas</label>
+            <label>Tecnologias Utilizadas</label><br>
 
             <label><input type="checkbox" name="tec1" value="html">HTML</label>
             <label><input type="checkbox" name="tec2" value="css">CSS</label>
@@ -73,12 +73,12 @@
 <!--Text Area-->
         <div class="grupo foco">
             <label>Experiência Profissional</label>
-            <textarea name="experiencia" rows="6">
+            <textarea rows= "6" cols ="75" name="experiencia" rows="6">
 
             </textarea>
         </div>
-        
-        <div class="grupo foco">
+        <br>
+        <div>
             <!--value para o output do que aparece no botão, por defeito -->
             <input type="submit" value="Enviar"></button>
         </div>

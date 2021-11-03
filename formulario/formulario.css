@@ -55,5 +55,36 @@ input, select, textarea
 .foco input:focus, .foco select:focus, .foco textarea:focus
 {
     background-color: #e0e0f8;
-    
+}
+/*COLOCAR AS OPÇOES RADIO NA VERTICAL*/
+.tabela label
+{
+    display: block;
+    margin-bottom: 2px;
+}
+
+/*APLICAR A UM TIPO DE INPUT SUBMIT*/
+/*
+input[type="submit"]
+{
+    padding: 8px;
+    margin: 2% 50%;
+    transform: translate(-50%, -50%);
+}
+*/
+
+/*CENTRAR BOTÃO NO FIELDSET, OUTRA MANEIRA*/
+
+.pRelativa
+{
+    position: relative;
+}
+
+input[type="submit"]
+{
+    position: absolute;
+    padding: 8px;
+    bottom: 6px;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
