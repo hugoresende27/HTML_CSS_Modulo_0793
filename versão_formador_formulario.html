@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Registo</title>
+
+</head>
+<body>
+    <div class="box">
+    <form>
+        <fieldset class="prelativa"> <!--Permite agrupar campo do formulário-->
+            <legend><strong>Formulário dos Candidatos</strong></legend> <!--Legenda do fieldset-->
+         
+            <div class="campo foco">
+                <!--o for permite que ao clicar na label aconteça o foco na caixa-->
+                <label for="nome">Nome:</label>
+                <!--required indica o preenchimento obrigatório do campo-->
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="grupo foco">
+                <label for="apelido">Apelido:</label>
+                <input type="text" name="apelido" id="apelido" required>
+            </div>
+
+            <div class="grupo foco">
+                <label for="email">E-mail:</label>
+            <!--type email faz algumas verificações como a existência do @-->
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="grupo tabela">
+                <label>Preferências de Programação:</label>
+                <!--Alternativa à utilização do for para fazer focus-->
+                <label><input type="radio" name="pref" value="frontend">Front-End</label>
+                <label><input type="radio" name="pref" value="backend">Back-End</label>
+                <label><input type="radio" name="pref" value="fullstack">Fullstack</label>
+            </div>
+
+            <div class="grupo foco">
+                <label>Experiência:</label>
+                <select>
+                    <!--selected define o valor por defeito-->
+                    <!--disabel não permite a sua seleção-->
+                    <option selected disabled value="">--Selecione--</option>
+                    <option value="junior">Júnior</option>
+                    <option value="intermedio">Intermédio</option>
+                    <option value="senior">Sénior</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label>Tecnologias Utilizadas:</label><br>
+               <label><input type="checkbox" name="tec1" value="html">HTML</label>
+               <label><input type="checkbox" name="tec2" value="css">CSS</label>
+               <label><input type="checkbox" name="tec3" value="javascript">JavaScript</label>
+               <label><input type="checkbox" name="tec4" value="php">PHP</label>
+               <label><input type="checkbox" name="tec5" value="csh">C#</label>
+               <label><input type="checkbox" name="tec6" value="python">Python</label>
+               <label><input type="checkbox" name="tec7" value="java">Java</label>
+            </div>
+
+            <div class="grupo foco">
+                <label>Experiência Profissional:</label><br>
+                <textarea rows="6" cols="75" name="experiencia"></textarea>
+            </div>
+            <br>
+            <input type="submit" value="Enviar"> 
+            
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
