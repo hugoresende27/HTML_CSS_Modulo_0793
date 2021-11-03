@@ -4,3 +4,56 @@ body
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f8ff;
 }
+
+.box
+{                           /*o browser é o container default para elementos posicionados de forma absolute*/
+    position: absolute;     /*como não tenho relative(PAI) o absolute vai ter como referência a raiz da página*/
+    top:50%;    /*ao usar top 50% vai ficar do meio para baixo*/
+    left:50%;   /*com left 50% vai ficar do meio para a direita ocupado*/
+    transform: translate(-50%, -50%); /*para corrigir o quadrado do canto inferior direito para o meio*/ 
+    background-color: #9999FF;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+fieldset 
+{
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+legend
+{
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    background-color: grey;
+    border-radius: 15px;
+}
+
+input, select, textarea
+{
+    font-family: sans-serif;
+    font-size: 13px;
+    border-radius: 5px;
+    color: rgb(43, 70, 226);
+}
+
+.campo  /*para por a primeira div a flutuar à esq, Nome e Apelido lado a lado*/
+{
+    float:left;
+    margin-right: 50px;
+}
+
+.grupo /*para dar uma distancia para baixo entre divs*/
+{
+    margin-bottom: 16px;
+}
+
+/*ALTERAR FORMATAÇÃO QUANDO É FEITO O FOCUS*/
+.foco input:focus, .foco select:focus, .foco textarea:focus
+{
+    background-color: #e0e0f8;
+    
+}

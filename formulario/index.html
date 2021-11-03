@@ -8,29 +8,30 @@
     <title>Formulário de Registo</title>
 </head>
 <body>
+<div class ="box">
 <!--tag form-->
     <form>    <!-- method="POST" action="candidatos.php">  para connectar ao servidor e enviar os dados para candidatos.php-->
     <fieldset>  <!--Permite agrupar campos do formulário-->
         <legend><strong>Formulário dos Candidatos</strong></legend> <!--legendaa do fieldset-->
 
-        <div>
+        <div class="campo foco">
             <label for="nome">Nome:</label>     <!--for vai associar o id ao click do rato sobre nome, faz o foco na caixa-->
             <input type="text" name="nome" id="nome" required>
         </div>
 
-        <div>
+        <div class="grupo foco">
             <label>Apelido:    
                 <input type="text" name="apelido" id="apelido" required> <!--se o input estiver dentro da tag label não preciso do for-->
             </label>
         </div>
 
-        <div>
+        <div class="grupo foco">
             <label for ="email">Email:</label>
             <!--type="email testa de %c@%c"-->
             <input type="email" name="email" id="email" required>
         </div>
 <!--radio -->
-        <div>
+        <div class="grupo">
             <label>Preferências de Programação</label>
             <!--value passa o valor da escolha para o servidor-->
             <label>
@@ -44,7 +45,7 @@
             </label> 
         </div>    
 <!--select options-->
-        <div>
+        <div class="grupo foco">
             <label>Experiência</label>
             <select>
                 <option selected disabled value="">--Selecione--</option>
@@ -56,7 +57,7 @@
         </div>
 
 <!--checkbox -->
-        <div>
+        <div class="grupo">
             <label>Tecnologias Utilizadas</label>
 
             <label><input type="checkbox" name="tec1" value="html">HTML</label>
@@ -70,20 +71,20 @@
         
 
 <!--Text Area-->
-        <div>
+        <div class="grupo foco">
             <label>Experiência Profissional</label>
             <textarea name="experiencia" rows="6">
 
             </textarea>
         </div>
         
-        <div>
+        <div class="grupo foco">
             <!--value para o output do que aparece no botão, por defeito -->
             <input type="submit" value="Enviar"></button>
         </div>
         
     </fieldset>
 </form>
-  
+</div>
 </body>
 </html>
