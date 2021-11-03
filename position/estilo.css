@@ -1,0 +1,26 @@
+.quadrado1
+{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+
+.quadrado2
+{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.testeabsoluto
+{
+    position: absolute;     /*posição absolute, vai ser com as coordenadas em relação à posição 0 da folha, orienta-se em relação à folha, absolute vai buscar o pai, neste caso não existe pai */
+    top: 30px;
+    right: 20px;
+}
+
+.testerelativo
+{
+    position: relative;     /*posicion relative vai defenir como pai*/
+}
+

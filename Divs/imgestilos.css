@@ -1,0 +1,46 @@
+
+body{
+    background-color: rgb(181, 233, 211);
+}
+
+
+td,tr{
+    border: 0.2rem solid rgb(3, 78, 19);
+}
+
+
+figure{
+    background-color: #f2eded;
+    border: 5px dashed black;
+    padding: 20px;
+}
+
+figcaption{
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.intro{
+    background-color: rgb(117, 197, 114);
+}
+
+
+.limite{
+    border:2px solid rgb(0, 0, 0);
+}
+
+.alinha{
+    text-align: center;
+}
+
+.alinha img{
+    border : 2px solid black;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.tamanho img{
+    width: 200px;
+    height: auto;       /*height: auto permite manter a porporção da imagem */
+}

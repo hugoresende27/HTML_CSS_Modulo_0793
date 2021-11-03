@@ -1,0 +1,101 @@
+body
+{
+    font-family:  'Lucida Sans Unicode', 'Lucida Grande';
+}
+
+.container  /*POSICIONA OS OBJETOS COM CLASSE CONTAINER NO MEIO DO BROWSER*/
+{
+    width: 940px;       /*230px + 10px margin + width img*/
+    margin: 0 auto;     /*distancia topo e fundo 0, dir e esq auto*/
+}
+
+.menu_opcoes li
+{
+    font-size: 15px;
+    list-style: none;
+    display: inline-block;/*coloca a lista em linha*/
+    margin-left: 20px;    /*distância à esquerda de cada elemento*/ 
+}
+
+
+header
+{
+    position: relative;     /*header vai ser o pai*/
+}
+.menu_opcoes
+{
+    position: absolute;     /*filho, absolute*/
+    bottom: 0px;            /*bottom e right para encostar á direita e abaixo*/
+    right: 0px;
+}
+
+/***************************************************************************************************************/
+
+.menu_artigos
+{
+    background-color: #DCDCDC;
+    font-weight: bold;
+    text-transform: uppercase;          /*TODAS AS LETRAS EM MAIUSCULAS*/
+    width: 230px;
+    float: left;
+    margin-right: 10px;
+}
+
+.menu_artigos li
+{
+    list-style: none;
+    margin-bottom: 2px;
+    padding: 5px 10px;
+    background-color: white;  
+}
+
+.menu_artigos a
+{
+  color: #333333;
+  text-decoration: none;
+}
+
+.menu_artigos h2
+{
+   text-align: center;
+}
+
+/***************************************************************************************************/
+
+figure
+{
+    background-color: #dcdcdc;
+    width: 205px;
+    height: 180px;
+    float: left;
+    margin: 15px;
+    padding-top: 20px; 
+    text-align: center; /*TEXT ALIGN AQUI VAI ALINHA O FIGURE(IMAGEM) AO CENTRO*/
+}
+
+
+/***************************************************************************************************/
+ footer
+{
+    background-image: url("../img/fundo-rodape.png");
+    clear:left; /*para o footer começar a seguir à estrutura PARA ESQUECER O FLOAT LEFT ANTERIOR*/
+    padding: 20px;
+    position: relative; /*RELATIVO É O PAI*/
+}
+
+ .social li
+{
+    display: inline; /*NAO PRECISO LIST STYLE:NONE PORQUE DISPLAY:INLINE TIRA OS MARCADORES*/
+    margin-left: 25px;
+}
+
+.social
+{
+    position: absolute;
+    /* top:15px; */
+    right: 20px;
+    bottom: 0px;
+}
+
+
+

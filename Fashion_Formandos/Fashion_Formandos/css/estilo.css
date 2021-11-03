@@ -1,0 +1,80 @@
+body
+{
+    font-family:  'Lucida Sans Unicode', 'Lucida Grande';
+    line-height: 2.5;
+    background-image: url("../img/body-background.png");
+   
+}
+
+h1 
+{
+    background-image: url("../img/fundo_h1.jpg");
+    padding: 15px;
+}
+
+p
+{
+    text-align: justify;
+    line-height: 2.5;
+    margin: 0px 30px;
+}
+
+
+h2
+{
+    border-bottom: solid 3px black;
+    margin-top: 30px;
+}
+
+li
+{
+    line-height: 2.5;
+}
+
+figure
+{
+    background-color: #f2eded;
+    border: solid 1px #cccccc;  
+    text-align: center; /*text-align para alinhar a imagem*/
+    padding: 15px;
+    margin: 30px;
+}
+
+figcaption
+{
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#fig_cdistribuicao
+{
+    width: 550px;
+    margin-left: auto;      /*para centrar na pagina o figure*/
+    margin-right: auto;     /*margin : 0px auto;*/
+    
+}
+
+#foto_familia
+{
+    float: right;
+    margin: 0px 35px 10px 10px;
+}
+
+#rodape
+{
+    /*background-image: url("../img/fundo-rodape.png");*/
+    color: #777777;
+    margin: 30px 0px;
+    padding: 30px 0px;
+}
+
+#rodape img
+{
+    width: 100px;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+
+
+

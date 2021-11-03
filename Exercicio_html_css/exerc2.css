@@ -1,0 +1,18 @@
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    font-size: 10pt;
+}
+
+h1,h2,h3{
+    color: red;
+}
+
+.alinha{
+    text-align: center;
+}
+
+.limite img{
+    border: 2px solid black;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Registo</title>
+</head>
+<body>
+<!--tag form-->
+    <form>    <!-- method="POST" action="candidatos.php">  para connectar ao servidor e enviar os dados para candidatos.php-->
+    <fieldset>  <!--Permite agrupar campos do formulário-->
+        <legend><strong>Formulário dos Candidatos</strong></legend> <!--legendaa do fieldset-->
+
+        <div>
+            <label for="nome">Nome:</label>     <!--for vai associar o id ao click do rato sobre nome, faz o foco na caixa-->
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div>
+            <label>Apelido:    
+                <input type="text" name="apelido" id="apelido" required> <!--se o input estiver dentro da tag label não preciso do for-->
+            </label>
+        </div>
+
+        <div>
+            <label for ="email">Email:</label>
+            <!--type="email testa de %c@%c"-->
+            <input type="email" name="email" id="email" required>
+        </div>
+<!--radio -->
+        <div>
+            <label>Preferências de Programação</label>
+            <!--value passa o valor da escolha para o servidor-->
+            <label>
+                <input type="radio" name="pref" value="frontend"> Front-End
+            </label>    
+            <label>
+                <input type="radio" name="pref" value="backend"> Back-End
+            </label> 
+            <label>
+                <input type="radio" name="pref" value="fullstack"> Full-Stack
+            </label> 
+        </div>    
+<!--select options-->
+        <div>
+            <label>Experiência</label>
+            <select>
+                <option selected disabled value="">--Selecione--</option>
+                <!--selected para definir o valor por defeito disable não permite a sua selecção value="" -->
+                <option value="junior">Júnior</option>
+                <option value="inter">Intermedio</option>
+                <option value="senior">Senior</option>
+            </select>
+        </div>
+
+<!--checkbox -->
+        <div>
+            <label>Tecnologias Utilizadas</label>
+
+            <label><input type="checkbox" name="tec1" value="html">HTML</label>
+            <label><input type="checkbox" name="tec2" value="css">CSS</label>
+            <label><input type="checkbox" name="tec3" value="Javastript">JavaScript</label>
+            <label><input type="checkbox" name="tec4" value="php">PHP</label>
+            <label><input type="checkbox" name="tec5" value="csh">C#</label>
+            <label><input type="checkbox" name="tec6" value="python">Python</label>
+            <label><input type="checkbox" name="tec7" value="Javas">Java</label>
+        </div>
+
+<!--Text Area-->
+        <div>
+            <label>Experiência Profissional</label>
+            <textarea name="experiencia" rows="6">
+
+            </textarea>
+        </div>
+        
+        <div>
+            <!--value para o output do que aparece no botão, por defeito -->
+            <input type="submit" value="Enviar"></button>
+        </div>
+        
+    </fieldset>
+</form>
+  
+</body>
+</html>
