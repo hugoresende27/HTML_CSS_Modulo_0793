@@ -12,23 +12,34 @@
 <div id="area">
     <form action="" id="formulario">
         <fieldset>
-        <legend>Formulário dos Candidatos</legend> 
+        <legend><strong>Formulário</strong></legend> 
 
         <div>
-            <label for="nome">Nome:</label>     
-            <input type="text" name="nome" id="nome" required>
+            <label for="nome"  >Nome:    </label>   
+            <input type="text" name="nome" id="nome"  class="nomeClasse" required placeholder="primeiro e último nome">
+           
         </div>
-        <div>
-            <label for="nome">Email:</label>     
-            <input type="text" name="nome" id="nome" required>
+        <div   >
+            <label for="mail" >Email:     </label> 
+            <input type="email" name="mail" id="mail"required class="mailClasse" placeholder="email@servidor.com">
+             
         </div>
-        <label>Mensagem</label><br>
-        <textarea rows= "8" cols ="38" name="mensagem" > </textarea><br>
+            <label id="mensagem">Mensagem: </label>
+            <textarea rows= "8" cols ="38" name="mensagem" > </textarea>
+           
         <input type="submit" value="Enviar"></button>
    
   
     </fieldset>
     </form>
+
+    <footer>
+        <p>Copyright 2021 - by Hugo Resende Products </p>
+        <a href="https://www.linkedin.com/in/hugo-resende-781ab1111/" target="blank"> LinkedIn </a> | <a href="https://github.com/hugoresende27" target="blank"> GitHub </a> | <a href="https://hugoresende27.github.io/portfolio/index.html" target="_blank">Portefólio</a>
+    <script>
+        document.write("<p>Hoje é dia "+ Date());
+    </script>
+    </footer>
 </div>
     
 </body>

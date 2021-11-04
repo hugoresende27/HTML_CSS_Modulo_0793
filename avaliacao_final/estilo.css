@@ -1,12 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Lato:ital,wght@0,300;0,900;1,700&family=Roboto+Condensed:wght@300&family=Zen+Kurenaido&display=swap');
 body
 {
     font-family:  'Zen Kurenaido', sans-serif;
-    font-weight: 900;
     background-color: grey;
 }
 
 fieldset
 {
-    background-color: rgb(152, 152, 235);
+    background-color: #A7C0dc;
+    height: 250px;
+    width: 300px;
+    padding: 20px;
 }
+
+legend
+{
+    font-family: 'Lato',sans-serif;
+}
+
+
+input, textarea/*Em vez de atribuir uma classe a text area e a cor, atribui aqui a cor a todos os inputs + textarea*/
+{
+    background-color: #F1FF00;
+}
+
+input[type="submit"]
+{
+    position: absolute; /*O botão deve ficar a uma distância de 20px do fundo do formulário e 10px da esquerda*/
+    bottom: 5px;        /*ao aplicar 20px bottom e 10px esquerda o botão fica sobreposto à textarea e alinhado à esquerda, não ficando de acordo com o desenho*/
+    right: 0px;
+}
+
+#area
+{
+    width: 320px;
+    height: 270px;
+    position: relative;  /*POSIÇÃO PAI*/
+}
+
+
+label
+{
+    left: 19px;
+    margin-right: 5px;
+}
+
+.nomeClasse
+{
+    position: absolute;
+    left: 95px;
+    width: 225px;
+}
+
+.mailClasse
+{
+    position: absolute;
+    left: 95px;
+    margin-top: 2px;
+    width: 225px;
+   
+}
+
+/*estilos do footer */
+
+footer{
+    font-size: 8pt;
+    color: rgb(14, 17, 12);
+    text-align: center;
+    border-top: 1px dashed;
+    font-family:'lato',sans-serif;
+    font-weight: 600;
+    bottom: 0;
+    
+    
+}
+
+footer a{
+   color: #edf5e1;  /*cor dos links a preto*/
+   text-decoration: none;     /*retira o sublinhado dos links*/
+  
+}
+
+footer a:hover{
+    color: red;
+}
+
+
+
