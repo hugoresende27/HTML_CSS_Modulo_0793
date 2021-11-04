@@ -5,7 +5,6 @@ body
     font-family:  'Zen Kurenaido', sans-serif;
     background-color: grey;
 }
-
 fieldset
 {
     background-color: #A7C0dc;
@@ -13,53 +12,43 @@ fieldset
     width: 300px;
     padding: 20px;
 }
-
 legend
 {
     font-family: 'Lato',sans-serif;
 }
-
-
 input, textarea/*Em vez de atribuir uma classe a text area e a cor, atribui aqui a cor a todos os inputs + textarea*/
 {
     background-color: #F1FF00;
 }
-
 input[type="submit"]
 {
     position: absolute; /*O botão deve ficar a uma distância de 20px do fundo do formulário e 10px da esquerda*/
     bottom: 5px;        /*ao aplicar 20px bottom e 10px esquerda o botão fica sobreposto à textarea e alinhado à esquerda, não ficando de acordo com o desenho*/
     right: 0px;
 }
-
 #area
 {
     width: 320px;
     height: 270px;
     position: relative;  /*POSIÇÃO PAI*/
 }
-
-
 label
 {
     left: 19px;
     margin-right: 5px;
 }
-
 .nomeClasse
 {
     position: absolute;
     left: 95px;
     width: 225px;
 }
-
 .mailClasse
 {
     position: absolute;
     left: 95px;
     margin-top: 2px;
-    width: 225px;
-   
+    width: 225px; 
 }
 
 /*estilos do footer */
