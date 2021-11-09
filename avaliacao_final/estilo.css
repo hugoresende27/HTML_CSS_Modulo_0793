@@ -2,8 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Lato:ital,wght@0,300;0,900;1,700&family=Roboto+Condensed:wght@300&family=Zen+Kurenaido&display=swap');
 body
 {
+    
     font-family:  'Zen Kurenaido', sans-serif;
     background-color: grey;
+    display: flex;          /*coloca tudo em linha*/
+      align-items: center;    /*alinha horizontalmente*/
+      justify-content: center;/*alinha tudo verticalmente com uso de height:100vh*/
+      height: 100vh;
+    
 }
 fieldset
 {
