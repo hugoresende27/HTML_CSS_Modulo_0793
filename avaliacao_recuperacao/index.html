@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href = "estilo.css">
+    <title>Formulário avaliação Recuperação Final</title>
+</head>
+<body>
+<div id="area">
+    <form action="" id="formulario">
+        <fieldset>
+        <legend><strong style="text-transform:uppercase;">Formulário</strong></legend> 
+
+      
+            <label for="nome"  class="tit">Nome Completo    </label>  
+            <input type="text"  id="nome"   required placeholder="Insira o nome Completo">
+           
+     
+            <label for="mail" class="tit">E-mail     </label> 
+            <input type="email"  id="mail"required placeholder="Insira o E-mail"> 
+      
+            <label for="telefone" class="tit">Telefone     </label> 
+            <input type="text"  id="telefone"required  placeholder="Insira telefone" maxlength="9" pattern="[\d]{9}"> 
+           
+        
+
+            <div class="radios">
+                <label class="tit">Idade</label>
+             
+                <label>
+                    <input type="radio" name="ida" value="dezoito" id="dez"> >18
+                </label>    
+                <label>
+                    <input type="radio" name="ida" value="vintes"> 18-35
+                </label> 
+                <label>
+                    <input type="radio" name="ida" value="trinta"> 35+
+                </label> 
+            </div> 
+
+            <div class="checkboxes">
+                <label class="tit">Habilitações</label>
+             
+                <label>
+                    <input type="checkbox" name="hab" value="sec" > >12ºAno
+                </label>    
+                <label>
+                    <input type="checkbox" name="hab" value="lic"> Licenciatura
+                </label> 
+                <label>
+                    <input type="checkbox" name="hab" value="mes"> Mestrado
+                </label> 
+                <label>
+                    <input type="checkbox" name="hab" value="dou"> Doutoramento
+                </label> 
+            </div> 
+            <label class="tit">Data Pretendida</label>
+            <input type="date">
+            
+            <label class="tit">Objetivo do Contracto</label>
+            <select>
+                <option selected disabled value="">Selecione Objetivo</option>
+                <option value="junior">Júnior</option>
+                <option value="inter">Intermedio</option>
+                <option value="senior">Senior</option>
+            </select>
+            
+        
+
+            <label for="msg" id="mensagem" class="tit">Mensagem: </label>
+          
+            <textarea rows="1" cols="50" placeholder="Insira Mensagem..." id="msg"></textarea>
+        
+    <div class="btn">
+        <button type="submit">Inserir</button>
+    </div>
+  
+    </fieldset>
+    </form>
+    <footer>
+        <p>Copyright 2021 - by Hugo Resende Products </p>
+        <p>
+        <a class="copyR" href="https://hugoresende27.github.io/portfolio/" target="blank"> Portefolio </a> | <a class="copyR" href="https://www.linkedin.com/in/hugo-resende-781ab1111/" target="blank"> LinkedIn </a> | <a  class="copyR" href="https://github.com/hugoresende27" target="blank"> GitHub </a>
+        </p>
+     </footer >
+  
+</div>
+    
+</body>
+</html>
